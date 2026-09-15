@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+#ageLabel {
+  font-size: 20px;
+  margin: 0;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto 5px auto;
+}
+
+#coalitions {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+.status {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 16px;
+}

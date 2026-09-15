@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wahlergebnisse nach Bundesland</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div id="main-wrapper">
+    <div id="map-container">
+      <div class="iframe-wrapper">
+        <iframe id="svgMap" src="de.svg"></iframe>
+      </div>
+    </div>
+
+    <div id="chart-container">
+      <h1>Wahlkarte 2025 – Politische Mehrheiten und Trends nach Bundesland</h1>
+      <h2 id="regionTitle">Wähle ein Bundesland</h2>
+
+      <div id="buttons-wrapper">
+        <div class="instruction">Wähle eine Darstellungsart für die politische Einfärbung der Karte:</div>
+        <div class="map-buttons">
+          <button onclick="setPartyView()">Stärkste Partei</button>
+          <button onclick="setSecondPartyView()">Zweitstärkste Partei</button>
+          <button onclick="setLeftRightView()">Links gegen Rechts</button>
+          <button onclick="setNatoView()">Nato Position</button>
+          <button onclick="setGroKoView()">GroKo möglich</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
